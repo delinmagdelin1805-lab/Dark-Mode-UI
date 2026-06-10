@@ -1,0 +1,188 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-family:Arial, sans-serif;
+
+    background:#f1f5f9;
+
+    transition:0.4s;
+
+    overflow:hidden;
+}
+
+/* Dark Mode */
+
+body.dark{
+    background:#0f172a;
+}
+
+/* Theme Button */
+
+#themeBtn{
+    position:absolute;
+
+    top:25px;
+    right:25px;
+
+    width:60px;
+    height:60px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#111827;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:0.4s;
+}
+
+/* Dark Button */
+
+body.dark #themeBtn{
+    background:white;
+
+    color:#111827;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+
+    max-width:450px;
+}
+
+/* Card */
+
+.card{
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+    transition:0.4s;
+}
+
+/* Dark Card */
+
+body.dark .card{
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.1);
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Heading */
+
+.card h1{
+    font-size:42px;
+
+    margin-bottom:20px;
+
+    color:#111827;
+
+    transition:0.4s;
+}
+
+/* Dark Heading */
+
+body.dark .card h1{
+    color:white;
+}
+
+/* Paragraph */
+
+.card p{
+    color:#475569;
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    margin-bottom:30px;
+
+    transition:0.4s;
+}
+
+/* Dark Paragraph */
+
+body.dark .card p{
+    color:#cbd5e1;
+}
+
+/* Button */
+
+.explore-btn{
+    padding:14px 32px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* Hover */
+
+.explore-btn:hover{
+    transform:scale(1.05);
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+    .card{
+        padding:30px 20px;
+    }
+
+    .card h1{
+        font-size:34px;
+    }
+
+    .card p{
+        font-size:16px;
+    }
+}
